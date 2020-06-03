@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
+import Main from './components/Main'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = () => {
+const App:React.FC = () => {
   return (
-    <div className="App">
+    <div>
+      <Main />
     </div>
   );
 }
