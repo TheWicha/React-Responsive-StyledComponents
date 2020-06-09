@@ -1,14 +1,10 @@
-import React from 'react';
-import './App.css';
-import Main from './components/Main'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "./App.css";
+import Main from "./components/Main";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const App:React.FC = () => {
-  return (
-    <div>
-      <Main />
-    </div>
-  );
-}
+const App: React.FC = () => {
+  return <Main />;
+};
 
 export default App;
