@@ -1,0 +1,13 @@
+#root{
+    background-color: #eceff1;
+    height: 100vh;
+}
+
+#dropdown-nav{
+    color: black;
+    outline: none;
+    background: white;
+    border-radius: 0;
+    height: 40px;
+    width: 158px;
+}
