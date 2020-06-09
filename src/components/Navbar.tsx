@@ -1,29 +1,21 @@
 import React from "react";
-import { Container, Row} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import Logo from "./Logo";
+import SearchForm from "./SearchForm";
 
 const StyledNav = styled(Container)`
-    background-color: #23C9FF;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
 `;
-
-const StyledNavElement = styled.div`
-    padding: 1.5rem;
-    color: white;
-    cursor: pointer;
-`;
-
-const StyledRow = styled(Row)`
-    justify-content: flex-end;
-`
 
 const Navbar: React.FC = () => {
   return (
-    <StyledNav>
-      <StyledRow>
-        <StyledNavElement>Home</StyledNavElement>
-        <StyledNavElement>About</StyledNavElement>
-        <StyledNavElement>Blog</StyledNavElement>
-      </StyledRow>
+    <StyledNav fluid>
+      <Logo />
+      <SearchForm />
     </StyledNav>
   );
 };
