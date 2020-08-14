@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./images/response.png";
+import img from "../images/response.png";
 
 const LogoImg = styled.img.attrs({
   src: img,

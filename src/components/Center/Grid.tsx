@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import styled from "styled-components";
 
-const Grid = () => {
+const Grid:React.FC = () => {
   const [gridLgValue, setGridLgValue] = useState(4);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const Grid = () => {
     };
 
     window.addEventListener("resize", handleResize);
-  });
+  }, []);
 
   return (
     <StyledGrid>

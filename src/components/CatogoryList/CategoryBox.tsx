@@ -2,9 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CategoryBoxProps from './types/types'
+import { CategoryBoxProps } from "../types/types";
 
-const CategoryBox = (props: CategoryBoxProps) => {
+const CategoryBox: React.FC<CategoryBoxProps> = (props: CategoryBoxProps) => {
   return (
     <StyledContainer>
       <a href="/">
@@ -12,7 +12,7 @@ const CategoryBox = (props: CategoryBoxProps) => {
           icon={props.icon}
           size="lg"
           style={{ minWidth: "40px" }}
-          />
+        />
         <CatName>{props.name}</CatName>
       </a>
     </StyledContainer>

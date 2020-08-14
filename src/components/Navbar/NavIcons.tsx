@@ -6,7 +6,7 @@ import { faStar, faCommentAlt } from "@fortawesome/free-regular-svg-icons";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 
-const NavIcons = () => {
+const NavIcons: React.FC = () => {
   return (
     <Icons>
       <div

@@ -4,6 +4,8 @@ import styled from "styled-components";
 import AsideLeft from "./AsideLeft";
 import Center from "./Center";
 import AsideRight from "./AsideRight";
+import Favorites from "./Favorites";
+import { Switch, Route } from "react-router-dom";
 
 const StyledRow = styled(Row)`
   margin: 0;
@@ -13,14 +15,21 @@ const StyledRow = styled(Row)`
   justify-content: center;
 `;
 
-const MainWrapper = () => {
+const Wrapper: React.FC = () => {
   return (
     <StyledRow>
       <AsideLeft />
-      <Center />
+      <Switch>
+        <Route path="/favorites">
+          <Favorites />
+        </Route>
+        <Route exact path="/">
+          <Center />
+        </Route>
+      </Switch>
       <AsideRight />
     </StyledRow>
   );
 };
 
-export default MainWrapper;
+export default Wrapper;

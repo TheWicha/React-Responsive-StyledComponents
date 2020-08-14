@@ -9,7 +9,7 @@ const StyledCol = styled(Col)`
   text-align: center;
 `;
 
-const Center = () => {
+const Center:React.FC = () => {
 
   return (
     <StyledCol lg="6">

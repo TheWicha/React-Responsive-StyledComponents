@@ -8,7 +8,7 @@ const StyledCol = styled(Col)`
   text-align: center;
 `;
 
-const AsideRight = () => {
+const AsideRight:React.FC = () => {
   return <StyledCol lg="3">aside right</StyledCol>;
 };
 
