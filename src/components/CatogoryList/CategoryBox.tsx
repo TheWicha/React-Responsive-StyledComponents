@@ -5,16 +5,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CategoryBoxProps } from "../types/types";
 
 const CategoryBox: React.FC<CategoryBoxProps> = (props: CategoryBoxProps) => {
+
+
   return (
     <StyledContainer>
-      <a href="/">
+      <div onClick={props.click}>
         <FontAwesomeIcon
           icon={props.icon}
           size="lg"
           style={{ minWidth: "40px" }}
         />
         <CatName>{props.name}</CatName>
-      </a>
+      </div>
     </StyledContainer>
   );
 };
@@ -23,7 +25,8 @@ export default CategoryBox;
 
 const StyledContainer = styled(Container)`
   padding-left: 0px;
-  a {
+  div {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -37,6 +40,11 @@ const StyledContainer = styled(Container)`
       padding-left: 13px;
       color: #ff5a00;
     }
+  }
+  @media screen and (max-width: 1000px) {
+    width: 146px;
+    margin: auto;
+    padding: 0;
   }
 `;
 

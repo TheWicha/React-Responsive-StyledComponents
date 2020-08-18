@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Navbar from "./Navbar";
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from './ContentWrapper'
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Main: React.FC = () => {

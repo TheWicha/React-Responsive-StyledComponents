@@ -16,4 +16,8 @@ export default Hamburger;
 
 const StyledHam = styled.div`
   cursor: pointer;
+  display: none;
+  @media screen and (max-width: 992px){
+    display: block;
+  }
 `;

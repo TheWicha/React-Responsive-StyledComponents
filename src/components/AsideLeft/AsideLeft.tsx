@@ -1,29 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
 import CategoriesList from "../CatogoryList";
-import Hamburger from './Hamburger'
-import Header from './Header'
+import Header from "./Header";
 
 const AsideLeft: React.FC = () => {
-  const [visible, setVisible] = useState(true);
-
-  const handleOnClick = () => {
-    setVisible(!visible);
-  };
-
   return (
     <StyledCol lg="2">
-      <Hamburger click={handleOnClick}/>
-      <Header />
-      <CategoriesList isVisible={visible} />
+      <HeaderWrraper>
+        <Header />
+      </HeaderWrraper>
+      <hr></hr>
+      <CategoriesList isVisible={true} click={() => {}} />
     </StyledCol>
   );
 };
 
 export default AsideLeft;
-
-
 
 const StyledCol = styled(Col)`
   background-color: #fff;
@@ -31,4 +24,6 @@ const StyledCol = styled(Col)`
   text-align: center;
 `;
 
-
+const HeaderWrraper = styled.div`
+  margin-bottom: 19px;
+`;
